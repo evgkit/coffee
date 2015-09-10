@@ -1,0 +1,5 @@
+name = Greeting
+description = The useless custom module from scratch. Display greeting.
+core = 7.x
+package = Awesome package.
+files[] = greeting.module

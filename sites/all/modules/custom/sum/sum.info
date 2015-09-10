@@ -1,0 +1,5 @@
+name = Sum
+description = Sum and displays two number entered into form.
+core = 7.x
+package = Awesome package.
+files[] = sum.module

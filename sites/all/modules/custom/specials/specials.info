@@ -1,0 +1,5 @@
+name = Specials
+description = Cameron's specials. Another useless custom module.
+core = 7.x
+package = Awesome package.
+files[] = specials.module

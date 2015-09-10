@@ -1,0 +1,34 @@
+<?php
+
+function greeting_menu() {
+    return [
+        'hello_world' => [
+            'title' => 'Hello, World!',
+            'page callback' => 'say_hello',
+            'access callback' => TRUE,
+            'type' => MENU_CALLBACK
+        ],
+        'goodbye_world' => [
+            'title' => 'Goodbye, World!',
+            'page callback' => 'say_goodbye',
+            'access callback' => TRUE,
+            'type' => MENU_CALLBACK
+        ]
+    ];
+}
+
+function say_hello() {
+    return '<p>Hello foo tball!</p>';
+}
+
+function say_goodbye() {
+    return '<p>Goodbye bar!</p>';
+}
+
+function greeting_user_login() {
+    $_GET['destination'] = 'hello_world';
+}
+
+function greeting_user_logout() {
+    $_GET['destination'] = 'goodbye_world';
+}
